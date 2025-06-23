@@ -30,7 +30,7 @@ const Login = () => {
       const user = JSON.parse(localStorage.getItem('user')); // Get user object
       console.log('Logged in user:', user); // Optional debug
 
-      navigate('/dessertorders'); // Redirect to homepage or dashboard
+      navigate('/dessertorders'); // Redirect to dessert orders page
     } catch (err) {
       setMessage(err.message || 'Login failed.');
     }
