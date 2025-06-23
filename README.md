@@ -36,5 +36,9 @@ POST	Orders.jsx	200	Id:/orders	Users can request their own orders
 -	Users can order different types of desserts in the real time and track theirs orders in the real time.
 About the project
 
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/8e3fe41c-c588-4e6b-b3c3-7834859d6f37" />
+
+
 📈 This project is a webpage built using the MERN stack that allows users to place orders for different desserts available in the store and track their orders.
 ![image](https://github.com/user-attachments/assets/0fcc0609-e5b7-427b-a3b5-8fb671f2a688)
