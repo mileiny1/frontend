@@ -1,12 +1,44 @@
-# React + Vite
+Auth Route
+HTTP	Controller	Response	URI	Use Case
+POST	Auth.js	200	/Signup	Create users
+POST	Auth.js	200	/Login	To sign in
+  
+Dessert Route
+HTTP	Controller	Response	URL	Use Cases
+GET	Dessert.js	200	/id	Get a specific dessert
+POST	Dessert.js	200	/id/login	User can login and make new orders
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Orders Route
+HTTP	Controller	Response	URL	Use Cases
+GET	Orders.jsx	200	Id:/Orders	Users are going to see the orders after they make the request
+POST	Orders.jsx	200	Id:/orders	Users can request their own orders
+				
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 Authentication & Security
+•	JWT Tokens: Secure authentication with expiring tokens
+•	Role-Based Access: User and Admin roles with appropriate permissions
+•	Password Protection: Bcrypt hashing with salt rounds
+•	Ownership Validation: Users can only access their own data
+•	Admin Safeguards: Admins and users cannot delete themselves or change other admin roles.
+•	Password Confirmation: Required for sensitive operations like user deletion.
 
-## Expanding the ESLint configuration
+•	Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+•	🟢 Node.js with Express.js framework
+•	🍃 MongoDB with Mongoose ODM
+•	🔐 JWT for secure authentication
+•	🔑 Bcrypt for password hashing
+•	🌐 CORS for cross-origin requests for front end session.
+•	🔧 Dotenv for environment variables
+•	 Features
+
+-	Users can order different types of desserts in the real time and track theirs orders in the real time.
+About the project
+
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/8e3fe41c-c588-4e6b-b3c3-7834859d6f37" />
+
+
+📈 This project is a webpage built using the MERN stack that allows users to place orders for different desserts available in the store and track their orders.
+![image](https://github.com/user-attachments/assets/0fcc0609-e5b7-427b-a3b5-8fb671f2a688)
