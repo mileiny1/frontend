@@ -88,7 +88,7 @@ const DessertOrders = () => {
       specialInstructions: formData.specialinstruction,
       user,
     };
-console.log(orderPayload)
+console.log(orderPayload) // this is for testing purposes
     const orderResponse = await createOrder(orderPayload, token);
     console.log('Order created:', orderResponse);
 
