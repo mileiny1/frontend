@@ -15,7 +15,7 @@ export const getOrdersByShortId = async () => {
     // Store for potential external access
     lastEncodedShortId = encodedShortId;
 
-    const res = await fetch(`http://localhost:3000/orders/orders/${encodedShortId}`, {
+    const res = await fetch(`https://dessert-orders-backend-46496330189a.herokuapp.com/orders/orders/${encodedShortId}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,
